@@ -20,4 +20,21 @@
 •	парите, които са необходими на Мария.
 
 """
-strawberry_price = int
+strawberry_price = float(input())
+qty_banana_kg = float(input())
+qty_portocal_kg = float(input())
+qty_raspberry_kg = float(input())
+qty_strawberry_kg = float(input())
+
+raspberry_price = strawberry_price / 2
+portocal_price = raspberry_price - (raspberry_price * 0.40)
+banana_price = raspberry_price - (raspberry_price * 0.80)
+
+sum_raspberry = qty_raspberry_kg * raspberry_price
+sum_portocal = qty_portocal_kg * portocal_price
+sum_banana = qty_banana_kg * banana_price
+sum_strawberry = strawberry_price * qty_strawberry_kg
+
+total_sum = sum_raspberry + sum_portocal + sum_banana + sum_strawberry
+
+print(total_sum)
