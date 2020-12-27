@@ -38,10 +38,30 @@ o	Сумата трябва да е закръглена с точност до 
 budget = int(input())
 season = input()
 
+
 destination = ""
 money = 0
 type_of_vacation = ""
 
+if season == "summer":
+    type_of_vacation = "Camp"
+elif season == "winter":
+    type_of_vacation = "Hotel"
+
 if budget <= 100:
     destination == "Bulgaria"
-    if 
+    if season == "summer":
+        money = budget * 0.30
+    if season == "winter":
+        money = budget * 0.70
+if budget <= 1000:
+    destination = "Balkans"
+    if season == "summer":
+        money = budget * 0.40
+    if season == "winter":
+        money = budget * 0.80
+else:
+    destination == "Europe"
+    money = budget * 0.90
+
+print(f"Somehwere in {destination}\n{type_of_vacation} - {money:.2f}")
