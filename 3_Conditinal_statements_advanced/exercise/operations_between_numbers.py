@@ -42,12 +42,25 @@ if operator == "+":
     else:
         print(f"{num_one} + {num_two} = {total} - odd")
 elif operator == "-":
-    total = nume_one - num_two
+    total = num_one - num_two
     if total % 2 == 0:
         print(f"{num_one} - {num_two} = {total} - even")
     else:
         print(f"{num_one} - {num_two} = {total} - odd")
 elif operator  == "*":
-    total = num_one * num_two:
+    total = num_one * num_two
     if total % 2 == 0:
         print(f"{num_one} * {num_two} = {total} - even")
+    else:
+        print(f"{num_one} * {num_two} = {total} - odd")
+elif operator == "/":
+    if num_two != 0:
+        print(f"{num_one} / {num_two} = {(num_one / num_two):.2f}")
+    else:
+        print(f"Cannot devide {num_one} by zero")
+elif operator == "%":
+    if (num_two != 0):
+        print(f"{num_one} % {num_two} = {num_one % num_two}")
+    else:
+        print(f"Cannot devide {num_one} by zero")
+    
