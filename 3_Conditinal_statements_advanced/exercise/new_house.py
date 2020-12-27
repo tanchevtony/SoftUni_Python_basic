@@ -29,24 +29,40 @@
 Сумата да бъде форматирана до втория знак след десетичната запетая.
 
 """
-flower_type = input()
-flower_qty = int(input())
-budget = int(input())
 
-flowers = 0
+flowers_type = input()
+quantity = int(input())
+budget = float(input())
 
-if flower_type == "Roses":
-    flowers = flower_qty * 5
-elif flower_type == "Dahlias":
-    flowers = flower_qty * 3.80
-elif flower_type == "Tulips":
-    flowers = flower_qty * 2.80
-elif flower_type == "Narcissus":
-    flowers = flower_qty * 3
-elif flower_type == "Gladiolus":
-    flowers = flower_qty * 2.50
+total = 0
 
-if flower_type == "Roses" and flower_qty > 80:
-    flowers *= 0.20
+if flowers_type == "Roses":
+    if quantity > 80:
+        total = (quantity * 5) * 0.9
+    else: 
+        total = quantity * 5
+if flowers_type == "Dahlias":
+    if quantity > 90:
+        total = (quantity * 3.8) * 0.85
+    else:
+        total = quantity * 3.8
+if flowers_type == "Tulips":
+    if quantity > 80:
+        total = (quantity * 2.8) * 0.85
+    else:
+        total = quantity * 2.8
+if flowers_type == "Narcissus":
+    if quantity < 120:
+        total = quantity * 3 + (quantity * 3) * 0.15
+    else:
+        total = quantity * 3
+if flowers_type == "Gladiolus":
+    if quantity < 80:
+        total = quantity * 2.5 + (quantity * 2.5) * 0.2
+    else:
+        total = quantity * 2.5
 
-print(flowers)
+if budget >= total:
+    print(f"Hey, you have a great garden with {quantity} {flowers_type} and {(budget - total):.2f} leva left.")
+elif budget < total:
+    print(f"Not enough money, you need {abs(budget - total):.2f} leva more.")
