@@ -52,13 +52,13 @@ if budget <= 100:
     destination == "Bulgaria"
     if season == "summer":
         money = budget * 0.30
-    if season == "winter":
+    elif season == "winter":
         money = budget * 0.70
-if budget <= 1000:
+elif budget <= 1000:
     destination = "Balkans"
     if season == "summer":
         money = budget * 0.40
-    if season == "winter":
+    elif season == "winter":
         money = budget * 0.80
 else:
     destination == "Europe"
