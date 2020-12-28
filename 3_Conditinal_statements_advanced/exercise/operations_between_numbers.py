@@ -57,10 +57,10 @@ elif operator == "/":
     if num_two != 0:
         print(f"{num_one} / {num_two} = {(num_one / num_two):.2f}")
     else:
-        print(f"Cannot devide {num_one} by zero")
+        print(f"Cannot divide {num_one} by zero")
 elif operator == "%":
     if (num_two != 0):
         print(f"{num_one} % {num_two} = {num_one % num_two}")
     else:
-        print(f"Cannot devide {num_one} by zero")
+        print(f"Cannot divide {num_one} by zero")
     
