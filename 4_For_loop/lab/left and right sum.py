@@ -22,7 +22,7 @@ for k in range(n):
     right_sum += num
 
 if left_sum == right_sum:
-    print(f"'Yes, sum = {right_sum}")
+    print(f"Yes, sum = {right_sum}")
 else:
     print(f"No, diff = {abs(left_sum - right_sum)}")
 
