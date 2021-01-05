@@ -16,5 +16,6 @@ while command != "Stop":
     if number > max_number:
         max_number = number
     command = input()
-print(max_number)
+if max_number != -sys.maxsize: 
+    print(max_number)
     
