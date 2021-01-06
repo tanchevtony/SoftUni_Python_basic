@@ -29,7 +29,6 @@ while current_class < 12:
     if current_grade < 4:
         fails += 1
         if fails == 2:
-            excluded = True
             break
     grade += current_grade
     current_class += 1
