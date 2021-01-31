@@ -1,5 +1,11 @@
-number_of_days = int(input())
+number_of_tournament_days = int(input())
 
 total_raised_money = 0
-sport = ""
+sport = input()
+
+while sport != "Finish":
+    pass
+    if
+    sport = input()
+
 

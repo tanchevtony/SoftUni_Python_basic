@@ -41,7 +41,7 @@ cloth_price = cloth_per_person * people
 
 if people > 150:
     cloth_price *= 0.90
-    #cloth_money = cloth_price - discount
+    # cloth_money = cloth_price - discount
 total_money = decor + cloth_price
 
 if budget >= total_money:
