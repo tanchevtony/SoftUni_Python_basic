@@ -27,8 +27,8 @@ montblan_percent = montblan / total_people * 100
 kilimandjaro_percent = kilimandjaro / total_people * 100
 k2_percent = k2 / total_people * 100
 everest_percent = everest / total_people * 100
-print(f"{musala_percent:.2f}")
-print(f"{montblan_percent:.2f}")
-print(f"{kilimandjaro_percent:.2f}")
-print(f"{k2_percent:.2f}")
-print(f"{everest_percent:.2f}")
+print(f"{musala_percent:.2f}%")
+print(f"{montblan_percent:.2f}%")
+print(f"{kilimandjaro_percent:.2f}%")
+print(f"{k2_percent:.2f}%")
+print(f"{everest_percent:.2f}%")

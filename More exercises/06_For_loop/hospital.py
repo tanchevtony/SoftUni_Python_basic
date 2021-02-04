@@ -16,3 +16,6 @@ for i in range(1, days + 1):
         treated_patients += current_patients
 
 print(f"Treated patients: {treated_patients}.\nUntreated patients: {untreated_patients}.")
+
+
+# yes
