@@ -21,7 +21,7 @@
 name = input()
 
 current_class = 0   # class reached
-fails = 0   # now many fails
+fails = 0   # how many fails
 grade = 0   # grade sum
 
 while current_class < 12:
