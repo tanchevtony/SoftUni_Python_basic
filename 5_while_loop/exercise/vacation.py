@@ -1,3 +1,6 @@
+needed_money - float(input())
+cash = float(input())
+
 needed_money = float(input())
 money_in_hand = float(input())
 
