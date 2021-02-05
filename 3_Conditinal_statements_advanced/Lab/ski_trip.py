@@ -39,28 +39,25 @@ rating = input()
 night = days - 1
 price = 0
 
-
 if room_type == 'room for one person':
     price = night * 18
 elif room_type == 'apartment':
     if days < 10:
         price = night * 25 * 0.70
-    elif days > 10 and days < 15:
+    elif 10 < days < 15:
         price = night * 25 * 0.65
     else:
         price = night * 25 * 0.50
 elif room_type == 'president apartment':
     if days < 10:
         price = night * 35 * 0.90
-    elif days > 10 and days < 15:
+    elif 10 < days < 15:
         price = night * 35 * 0.85
     else:
         price = night * 35 * 0.80
 
 if rating == "positive":
     price *= 1.25
-
-
 elif rating == "negative":
-     price *= 0.90
+    price *= 0.90
 print(f"{price:.2f}")
