@@ -50,4 +50,5 @@ elif month == "July" or month == "August":
 
 if nights > 14:
     apartment *= 0.9
+
 print(f"Apartment: {(nights * apartment):.2f} lv.\nStudio: {(nights * studio):.2f} lv.")
