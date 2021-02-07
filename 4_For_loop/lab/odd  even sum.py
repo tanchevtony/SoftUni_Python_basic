@@ -14,7 +14,7 @@ n = int(input())
 even_num = 0
 odd_num = 0
 
-for i in range (n):
+for i in range(n):
     num = int(input())
     if i % 2 == 0:
         even_num += num
@@ -24,5 +24,5 @@ for i in range (n):
 if even_num == odd_num:
     print(f"Yes\nSum = {even_num}")
 else:
-    print(f"No\nDiff = {abs(even_num - odd_num)}")
-
+    diff = abs(even_num - odd_num)
+    print(f"No\nDiff = {diff}")
