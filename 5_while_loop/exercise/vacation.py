@@ -1,6 +1,3 @@
-needed_money - float(input())
-cash = float(input())
-
 needed_money = float(input())
 money_in_hand = float(input())
 
@@ -27,3 +24,35 @@ if spending_too_many_days:
     print(f"{total_days}")
 else:
     print(f"You saved the money for {total_days} days.")
+
+# another version has not been tested
+
+money_for_vacation = float(input())
+money = float(input())
+
+days = 0
+spend_days = 0
+
+while money < money_for_vacation:
+
+    spend_or_save = input()
+    money_spend_saved = float(input())
+    days += 1
+
+    if spend_or_save == "spend":
+        spend_days += 1
+        money -= money_spend_saved
+        if money < 0:
+            money = 0
+
+    elif spend_or_save == "save":
+        money += money_spend_saved
+        spend_days = 0
+
+    if spend_days == 5:
+        print(f"You can\'t save the money.")
+        print(f"{days}")
+        break
+
+    elif money >= money_for_vacation and spend_days < 5:
+        print(f"You saved the money for {days} days.")
