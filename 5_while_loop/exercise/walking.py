@@ -16,6 +16,6 @@ if going_home:
 difference = abs(current_steps - target_steps)
 if current_steps >= target_steps:
     print("Goal reached! Good job!")
-    print(f"{difference} spteps over the goal!")
+    print(f"{difference} steps over the goal!")
 else:
     print(f"{difference} more steps to reach goal.")

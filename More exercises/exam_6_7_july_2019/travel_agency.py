@@ -6,21 +6,11 @@ days = int(input())
 price = 0
 
 if destination == "Bansko" or destination == "Borovets":
-    if pack_type == "noEquipment" and vip == "yes":
-        price *= 100
-
-
-
-
-
-
-
-
-
-
-
-
-
+    if pack_type == "noEquipment":
+        price = 80
+    elif pack_type == "withEquipment":
+        price = 100
+    if 
 #         price = 80
 #         elif pack_type == "withWquipment":
 #         price = 100

@@ -1,3 +1,54 @@
+poor_grades = int(input())
+
+last_problem = ""
+fails = 0
+solved_problems = 0
+grades = 0
+flag = False
+name = input()
+while name != "Enough":
+    grade = int(input())
+
+    if grade <= 4:
+        fails += 1
+    solved_problems += 1
+    last_problem = name
+    grades += grade
+    if fails == poor_grades:
+        flag = True
+        break
+
+    name = input()
+
+average_score = grades / solved_problems
+if flag:
+    print(f"You need a break, {fails} poor grades.")
+else:
+    print(f"Average score: {average_score:.2f}")
+    print(f"Number of problems: {solved_problems}")
+    print(f"Last problem: {last_problem}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # player_one_eggs = int(input())
 # player_two_eggs = int(input())
 #
@@ -19,17 +70,3 @@
 #     print(f"Player one has {player_one_eggs} eggs left.")
 #     print(f"Player two has {player_two_eggs} eggs left.")
 
-book = input()
-count = 0
-is_book_found = False
-command = input()
-while command != "No More Books":
-
-    count += 1
-    if command == book:
-        is_book_found = True
-        break
-
-    command = input()
-if is_book_found:
-    print(f"You have checked {count} books and found it.")

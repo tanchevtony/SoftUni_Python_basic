@@ -26,3 +26,4 @@ animator = hall_rent / 3
 total = hall_rent + cacke_price + drink + animator
 
 print(total)
+
