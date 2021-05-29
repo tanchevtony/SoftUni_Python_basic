@@ -36,3 +36,5 @@ if area == "Retire":
     print(f"{player_name} retired after {failed} unsuccessful shots.")
 else:
     print(f"{player_name} won the leg with {successful} shots.")
+
+
