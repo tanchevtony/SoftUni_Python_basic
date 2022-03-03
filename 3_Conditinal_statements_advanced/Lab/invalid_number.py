@@ -16,7 +16,7 @@
 
 number = int(input())
 
-if number >= 100 or number <= 200 and number == 0:
+if 100 <= number <= 200 or number == 0:
     print()
 else:
     print("Invalid")

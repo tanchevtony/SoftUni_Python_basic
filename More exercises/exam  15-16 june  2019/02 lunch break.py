@@ -3,8 +3,8 @@ series_name = input()
 time_per_episode = int(input())
 break_time = int(input())
 
-lunch_time = break_time * 1 / 8
-rest_time = break_time * 1 / 4
+lunch_time = break_time / 8
+rest_time = break_time / 4
 left_time = break_time - rest_time - lunch_time
 difference = math.ceil(abs(time_per_episode - left_time))
 
